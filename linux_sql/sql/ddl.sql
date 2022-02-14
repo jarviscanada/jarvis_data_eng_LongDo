@@ -1,6 +1,8 @@
 -- Switch to host_agent
 \c host_agent;
 
+
+
 -- Create host_info table if does not exist
 CREATE TABLE IF NOT EXISTS PUBLIC.host_info
     (
@@ -13,7 +15,8 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_info
         l2_cache INT NOT NULL,
         total_mem INT NOT NULL,
         "timestamp" TIMESTAMP NOT NULL
-    )
+    );
+
 
 -- Create host_usage table if does not exist
 CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
@@ -26,4 +29,6 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
         disk_io INT NOT NULL,
         disk_available INT NOT NULL,
         FOREIGN KEY (host_id) REFERENCES host_info(id)
-    )
+    );
+
+
