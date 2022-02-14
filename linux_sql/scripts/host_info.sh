@@ -19,24 +19,25 @@ hostname=$(hostname -f)
 #Save number of a CPU to variable
 lscpu_out=`lscpu`
 mem_out=`cat /proc/meminfo`
-vmstat_out=`vmstat -t`
+
 
 #Hardware specs
 cpu_number=$(echo "$lscpu_out" | egrep "^CPU\(s\):" | awk '{print $2}' | xargs)
 cpu_architecture=$(echo  "$lscpu_out" | egrep "^Architecture:" | awk '{print $2}' | xargs)
 cpu_model=$(echo "$lscpu_out" | egrep "^Model:" | awk '{print $2}' | xargs)
-cpu_mhz=$(echo "$lscpu_out" | egrep "^CPU MHz:" | awk '{print $2}' | xargs)
-l2_cache=$(echo "$lscpu_out" | egrep "^L2 cache:" | awk '{print $2}' | xargs)
+cpu_mhz=$(echo "$lscpu_out" | egrep "^CPU MHz:" | awk '{print $3}' | xargs)
+l2_cache=$(echo "$lscpu_out" | egrep "^L2 cache:" | awk '{print $3}' |  sed 's/K//' | xargs)
 total_mem=$(echo "$mem_out" | egrep "MemTotal:" | awk '{print $2}' | xargs)
-timestamp=$(echo "$vmstat_out" | awk 'NR == 3 {print $18 " " $19}' | xargs)
+timestamp=$(vmstat -t | tail -1 | awk '{print $18}' | xargs)
 
 #query to insert to data to host_info table
-insert_query="INSERT INTO host_info (hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, total_mem, timestamp) VALUES('$hostname', '$cpu_number', '$cpu_architecture', '$cpu_model', '$cpu_mhz', '$l2_cache', '$total_mem', '$timestamp')"
+insert_query="INSERT INTO host_info (hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, total_mem, timestamp)
+VALUES ('$hostname', '$cpu_number', '$cpu_architecture', '$cpu_model', '$cpu_mhz', '$l2_cache', '$total_mem', '$timestamp')"
 
 
 #insert all values to the database
 export PGPASSWORD=$psql_password
 
-psql -h $psql_host -p $port -d $db_name -U $psql_user -c $insert_query
+psql -h $psql_host -p $port -d $db_name -U $psql_user -c "$insert_query"
 
-exit 0
+exit $?
