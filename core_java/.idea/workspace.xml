@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c387a29-6fb0-49a3-b774-bed611209d38" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/core_java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/core_java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grep/grep.iml" beforeDir="false" afterPath="$PROJECT_DIR$/grep/grep.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grep/out/grep_2022-02-19_19:08:31.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grep/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/grep/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/grep/practice/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/practice/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/grep/practice/RegexExc.java" beforeDir="false" afterPath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/practice/RegexExc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/grep/practice/RegexExcImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/practice/RegexExcImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -72,7 +65,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
