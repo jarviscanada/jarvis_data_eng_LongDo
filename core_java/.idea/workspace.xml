@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c387a29-6fb0-49a3-b774-bed611209d38" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/core_java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/core_java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/grep.iml" beforeDir="false" afterPath="$PROJECT_DIR$/grep/grep.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grep/out/grep_2022-02-19_19:08:31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/grep/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/grep/practice/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/practice/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/grep/practice/RegexExc.java" beforeDir="false" afterPath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/practice/RegexExc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/grep/practice/RegexExcImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/practice/RegexExcImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +43,13 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -47,13 +61,44 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Program Files/Java/src.zip" />
     <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ca.jrvs.apps.grep" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="JavaGrepImp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.grep.JavaGrepImp" />
+      <module name="grep" />
+      <option name="PROGRAM_PARAMETERS" value=".*IllegalArgumentException.* ./grep /tmp/grep.out" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JavaGrepImp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
