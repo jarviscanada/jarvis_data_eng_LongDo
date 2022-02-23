@@ -68,8 +68,10 @@ public class JavaGrepImp implements JavaGrep {
   public List<File> listFiles(String rootDir) {
     File file = new File(rootDir);
     List<File> files = new ArrayList<File>();
-    for (File f : file.listFiles()) {
-      files.add(f);
+    if (file.listFiles() != null) {
+      for (File f : file.listFiles()) {
+        files.add(f);
+      }
     }
     return files;
   }

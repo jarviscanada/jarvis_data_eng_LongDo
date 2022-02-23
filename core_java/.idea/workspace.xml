@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c387a29-6fb0-49a3-b774-bed611209d38" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/grep/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grep/log/grep.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grep/out/grep_2022-02-19_19:08:31.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grep/out/grep_2022-02-19_190831.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grep/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/grep/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/grep/JavaGrepImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/grep/JavaGrepImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/target/classes/ca/jrvs/apps/grep/JavaGrepImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/grep/target/classes/ca/jrvs/apps/grep/JavaGrepImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/target/grep-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/grep/target/grep-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/target/grep-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/grep/target/grep-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/grep/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/target/original-grep-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/grep/target/original-grep-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +93,7 @@
     <configuration name="JavaGrepImp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.grep.JavaGrepImp" />
       <module name="grep" />
-      <option name="PROGRAM_PARAMETERS" value=".*IllegalArgumentException.* $PROJECT_DIR$/grep/src $PROJECT_DIR$/../../../grep.out" />
+      <option name="PROGRAM_PARAMETERS" value=".*Romeo.*Juliet.* $PROJECT_DIR$/grep/data $PROJECT_DIR$/grep/out/grep.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.jrvs.apps.practice.*" />
