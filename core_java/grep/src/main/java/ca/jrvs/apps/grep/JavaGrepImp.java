@@ -68,7 +68,7 @@ public class JavaGrepImp implements JavaGrep {
   public List<File> listFiles(String rootDir) {
     File file = new File(rootDir);
     List<File> files = new ArrayList<File>();
-    for (File f: file.listFiles()) {
+    for (File f : file.listFiles()) {
       files.add(f);
     }
     return files;
@@ -77,7 +77,7 @@ public class JavaGrepImp implements JavaGrep {
   @Override
   public List<String> readLines(File inputFile) {
     List<String> lines = new ArrayList<String>();
-    if(!inputFile.canRead()){
+    if (!inputFile.canRead()) {
       inputFile.setReadable(true);
     }
     try {

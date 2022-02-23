@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c387a29-6fb0-49a3-b774-bed611209d38" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grep/out/grep_2022-02-19_19:08:31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/out/grep_2022-02-19_190831.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grep/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/grep/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/grep/JavaGrepImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/grep/src/main/java/ca/jrvs/apps/grep/JavaGrepImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grep/target/classes/ca/jrvs/apps/grep/JavaGrepImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/grep/target/classes/ca/jrvs/apps/grep/JavaGrepImp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -71,18 +73,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Program Files/Java/src.zip" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ca.jrvs.apps.grep" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JavaGrepLambdaImp">
+  <component name="RunManager" selected="Application.JavaGrepImp">
     <configuration name="JavaGrepImp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.grep.JavaGrepImp" />
       <module name="grep" />
@@ -117,8 +120,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JavaGrepLambdaImp" />
         <item itemvalue="Application.JavaGrepImp" />
+        <item itemvalue="Application.JavaGrepLambdaImp" />
       </list>
     </recent_temporary>
   </component>
