@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c387a29-6fb0-49a3-b774-bed611209d38" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grep/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/grep/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/jdbc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/jdbc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +65,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -82,7 +85,20 @@
       <recent name="ca.jrvs.apps.grep" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JavaGrepImp">
+  <component name="RunManager" selected="Application.JBDCExecutor">
+    <configuration name="JBDCExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.jdbc.JBDCExecutor" />
+      <module name="jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.jrvs.apps.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JavaGrepImp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.jrvs.apps.grep.JavaGrepImp" />
       <module name="grep" />
@@ -114,9 +130,11 @@
     <list>
       <item itemvalue="Application.JavaGrepImp" />
       <item itemvalue="Application.JavaGrepLambdaImp" />
+      <item itemvalue="Application.JBDCExecutor" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JBDCExecutor" />
         <item itemvalue="Application.JavaGrepImp" />
         <item itemvalue="Application.JavaGrepLambdaImp" />
       </list>
