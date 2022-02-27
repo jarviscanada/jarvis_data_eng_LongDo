@@ -19,9 +19,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HaiLong](h
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HaiLong/tree/master/core_java)]:
       
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
+  - Twitter App: In progress
+  - JDBC App: Developed an Java Maven project that contains full CRUD functionality. Implemented DAO patterns. Provisioned PostgreSQL by using Docker. Leverage JDBC for database and setup connection.
+  - Grep App: Developed an Java Maven project that mimics grep command by performing regex patterns that match files in a directory. Applied Stream APIand Lamda expression for improved performance.
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HaiLong/tree/master/springboot)]: Not Started
 

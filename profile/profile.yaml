@@ -38,9 +38,9 @@ jarvis_projects:
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "Twitter App: In progress"
+      - "JDBC App: Developed an Java Maven project that contains full CRUD functionality. Implemented DAO patterns. Provisioned PostgreSQL by using Docker. Leverage JDBC for database and setup connection."
+      - "Grep App: Developed an Java Maven project that mimics grep command by performing regex patterns that match files in a directory. Applied Stream APIand Lamda expression for improved performance."
   - name: "Springboot App"
     git_url: "/springboot"
     description: ""
