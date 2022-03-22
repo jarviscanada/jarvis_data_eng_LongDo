@@ -1,0 +1,97 @@
+name: "Hai Long Do"
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_HaiLong
+
+summary: I am a Computer Engineering new grad from Seneca College. Throughout my college, I gained experiences in Software Development and Networking. I'm also having realworl practical experience in Networking as IT Systems Technologist during my Co-op term. Besides, I'm very interested in Web development and having practical experience by building site project from Front-end, Back-end to Full-stack which popular language and frameworks such as JavaScript, React, NodeJS,ASP.NET, etc,.. After graduate, I decided join in Jarvis training program for Software Engineer position. Currently, I am looking for an great environment where I can apply my technical and soft skill that I have learned, also a place where I am able to continue to improve myselft. 
+
+
+skills: 
+  proficient:
+    - Java
+    - JavaScript
+    - TypeScript
+    - React/Redux
+    - NodeJS
+    - Linux/Bash
+    - RDBMS/SQL
+    - MongoDB
+    - Agile/Scrum
+    - HTML/CSS
+    - Bootstrap 5/ Tailwind CSS
+    - Git
+  competent:
+    - C#
+    - ASP.NET
+    - Docker
+    - NextJS
+    - JWT
+  familiar:
+    - C/C++
+    - Python
+    - Django
+    - Material UI
+    - Angular
+
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    description: "Developed a cluster resource monitoring program that collects data CPU hardware specifications using Bash Shell Scripts. Provisioned a PostgreSQL instance using Docker. Stored static and dynamic real-time data in the psql instance. Automated dynamic real-time data retrieval every one minute using crontab. Inserted the specifications into two tables using DDL."
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Twitter App: In progress"
+      - "JDBC App: Developed an Java Maven project that contains full CRUD functionality. Implemented DAO patterns. Provisioned PostgreSQL by using Docker. Leverage JDBC for database and setup connection."
+      - "Grep App: Developed an Java Maven project that mimics grep command by performing regex patterns that match files in a directory. Applied Stream APIand Lamda expression for improved performance."
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: ""
+  - name: "Python Data Analytics"
+    git_url: "/python_data_anlytics"
+    description: ""
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: ""
+  - name: "Spark"
+    git_url: "/spark"
+    description: ""
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: ""
+
+
+highlighted_projects:
+  - name: "ILearn"
+    git_url: "https://github.com/hailong09/Ilearnbymyself"
+    description:  "Developed a MERN stack app for tracking and modify learning process. Implemented JsonWebToken for authentication. Implemented React in frontend site and Context API as state management. Implemented ExpressJS in backend. Applied MongoDB for storaging data."
+  - name: "E-commerce Web API"
+    git_url: "https://github.com/hailong09/.NetEcommerceWepAPI"
+    description: "Developed an Ecommercial ASP dotNET Web API. Implemented authentication using JsonWebToken. Handled paying by applying Stripe. Designed database using MongoDB."
+  - name: "Reddit clone"
+    git_url: "https://github.com/hailong09/NextJS_reddit"
+    description: "Developed Fullstack webapp cloning Reddit features. Applied ExpressJS framework from backend and GraphQL as API instead of REST API. Implemented PostSQL for storaging purpose. Applied NextJS from frontend and handle GraphQL API using Apollo. Improved SEO using getServerSideProps function. Generated code from GraphQL using GraphQL codegen. Styled web app using Charka UI. Implemented TypeScript for both side to reduce typing errors and errors handling efficency"      
+
+
+professional_experience:
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2022-present"
+    description: "Implemented several projects covering various technologies such as Linux, Bash, SQL, Java, Springboot. Collaborated together by using Agile methodology. Applied Scrum framework for daily and retrospect meetings"
+  - title: "IT Systems Technologist"
+    company: "Seneca College"
+    duration: "2020"
+    description: "Provided quility customer service by ansering questions through emails and calls. Gainded good feedbacks from resolving technical issues involving hardware and software applications. Delivered client support throught Field Service Technology. Received return offter from the company"
+
+#List of edcuation
+education: 
+  - school_name: "Seneca College"
+    duration: "2019-2021"
+    degree: "Advanced Diploma"
+    department: "Computer Engineering Technology"
+    awards_achievements: 
+      - "Dean's List (2021)"
+      - "GPA: 3.8/4.0"
+
+others:
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Video Game"
+      - "Movies"
