@@ -1,4 +1,4 @@
-package ca.jrvs.apps.twitter.helper;
+package ca.jrvs.apps.twitter.dao.helper;
 
 import java.io.IOException;
 import java.net.URI;
