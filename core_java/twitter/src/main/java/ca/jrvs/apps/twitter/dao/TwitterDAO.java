@@ -11,9 +11,10 @@ import java.net.URISyntaxException;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+
+@Repository
 public class TwitterDAO implements CrdDao<Tweet, String> {
 
   //URI constants
@@ -59,7 +60,7 @@ public class TwitterDAO implements CrdDao<Tweet, String> {
     HttpResponse response;
     try {
       String uriString = API_BASE_URI + SHOW_PATH + QUERY_SYM + "id" + EQUAL + s;
-      response = httpHelper.httpPost(new URI(uriString));
+      response = httpHelper.httpGet(new URI(uriString));
     } catch (URISyntaxException e) {
       throw new IllegalArgumentException("Invalid input", e);
     }

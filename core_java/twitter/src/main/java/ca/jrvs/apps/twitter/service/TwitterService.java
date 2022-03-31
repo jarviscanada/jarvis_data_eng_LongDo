@@ -9,12 +9,15 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Objects;
+import org.springframework.beans.factory.annotation.Autowired;
 
+
+@org.springframework.stereotype.Service
 public class TwitterService implements Service {
 
   private CrdDao dao;
 
+  @Autowired
   public TwitterService(CrdDao dao) {
     this.dao = dao;
   }

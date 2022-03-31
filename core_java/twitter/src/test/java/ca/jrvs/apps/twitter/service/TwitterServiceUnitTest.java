@@ -33,15 +33,7 @@ public class TwitterServiceUnitTest {
     assertEquals("mock test", actual.getText());
   }
 
-  @Test
-  public void showTweet() {
-    Tweet expected = new Tweet();
-    expected.setText("mock test");
-    String[] fields = {};
-    when(mockDao.findById(any())).thenReturn(expected);
-    Tweet actual = twitterService.showTweet("1234", fields);
-    assertEquals("mock test", actual.getText());
-  }
+
 
   @Test
   public void deleteTweets() {
