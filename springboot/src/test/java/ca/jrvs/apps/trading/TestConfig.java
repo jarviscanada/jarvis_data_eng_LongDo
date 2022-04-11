@@ -5,25 +5,25 @@ import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.http.conn.HttpClientConnectionManager;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-//@EnableTransactionManagement
-@ComponentScan("ca.jrvs.apps.trading")
-public class AppConfig {
-
-  private Logger logger = LoggerFactory.getLogger(AppConfig.class);
+@ComponentScan(basePackages = {"ca.jrvs.apps.trading.dao", "ca.jrvs.apps.trading.service"})
+public class TestConfig {
 
   @Bean
-  DataSource dataSource() {
+  public MarketDataConfig marketDataConfig() {
+    MarketDataConfig marketDataConfig = new MarketDataConfig();
+    marketDataConfig.setHost("https://cloud.iexapis.com/v1/");
+    marketDataConfig.setToken(System.getenv("IEX_PUB_TOKEN"));
+    return marketDataConfig;
+  }
+
+  @Bean
+  public DataSource dataSource() {
+    System.out.println("Creating apacheDatasource");
     String url = System.getenv("PSQL_URL");
     String user = System.getenv("PSQL_USER");
     String password = System.getenv("PSQL_PASSWORD");
@@ -35,26 +35,11 @@ public class AppConfig {
   }
 
   @Bean
-  public MarketDataConfig marketDataConfig() {
-    MarketDataConfig marketDataConfig = new MarketDataConfig();
-    marketDataConfig.setToken(System.getenv("IEX_PUB_TOKEN"));
-    marketDataConfig.setHost("https://cloud.iexapis.com/v1");
-    return marketDataConfig;
-  }
-
-
-  @Bean
   public HttpClientConnectionManager httpClientConnectionManager() {
     PoolingHttpClientConnectionManager cm = new PoolingHttpClientConnectionManager();
     cm.setMaxTotal(50);
     cm.setDefaultMaxPerRoute(50);
     return cm;
-  }
-
-  public static void main(String[] args) throws Exception {
-    ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-    Application app = context.getBean(Application.class);
-    app.run(args);
   }
 
 }
