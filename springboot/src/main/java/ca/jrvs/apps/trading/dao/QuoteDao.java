@@ -88,10 +88,8 @@ public class QuoteDao implements CrudRepository<Quote, String> {
     List<Quote> quoteList = new ArrayList<>();
 
     for (Quote quote : quotes) {
-      quoteList.add(quote);
-      save(quote);
+      quoteList.add(save(quote));
     }
-
     return (List<S>) quoteList;
   }
 
