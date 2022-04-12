@@ -113,7 +113,7 @@ public class IexQuote {
   @JsonProperty("highTime")
   private Long highTime;
   @JsonProperty("iexAskPrice")
-  private Integer iexAskPrice;
+  private Double iexAskPrice;
   @JsonProperty("iexAskSize")
   private Integer iexAskSize;
   @JsonProperty("iexBidPrice")
@@ -372,12 +372,12 @@ public class IexQuote {
   }
 
   @JsonProperty("iexAskPrice")
-  public Integer getIexAskPrice() {
+  public Double getIexAskPrice() {
     return iexAskPrice;
   }
 
   @JsonProperty("iexAskPrice")
-  public void setIexAskPrice(Integer iexAskPrice) {
+  public void setIexAskPrice(Double iexAskPrice) {
     this.iexAskPrice = iexAskPrice;
   }
 
