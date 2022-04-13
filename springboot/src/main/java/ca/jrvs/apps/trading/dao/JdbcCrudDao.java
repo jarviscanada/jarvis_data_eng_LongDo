@@ -112,7 +112,7 @@ public abstract class JdbcCrudDao<T extends Entity<Integer>> implements CrudRepo
 
   @Override
   public long count() {
-    String selectSql = "SELECT COUNT(*) FROM" + getTableName();
+    String selectSql = "SELECT COUNT(*) FROM " + getTableName();
     Long count = getJdbcTemplate().queryForObject(selectSql, Long.class);
     if (count == null) {
       throw new NullPointerException("Sql count null returned.");

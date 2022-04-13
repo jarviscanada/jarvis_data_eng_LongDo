@@ -66,7 +66,7 @@ public class QuoteDao implements CrudRepository<Quote, String> {
    */
   private int updateOne(Quote quote) {
     String update_sql = "UPDATE quote SET last_price=?, bid_price=?,"
-        + "bid_size=?, ask_price=?, ask_size=? WHERE ticker=?";
+        + " bid_size=?, ask_price=?, ask_size=? WHERE ticker=?";
 
     return jdbcTemplate.update(update_sql, makeUpdateValues(quote));
   }
@@ -152,7 +152,7 @@ public class QuoteDao implements CrudRepository<Quote, String> {
 
   @Override
   public long count() {
-    String query = "SELECT COUNT(*) FROM" + TABLE_NAME;
+    String query = "SELECT COUNT(*) FROM " + TABLE_NAME;
     return jdbcTemplate.queryForObject(query, Long.class);
   }
 
@@ -168,7 +168,7 @@ public class QuoteDao implements CrudRepository<Quote, String> {
 
   @Override
   public void deleteAll() {
-    String query = "DELETE FROM" + TABLE_NAME;
+    String query = "DELETE FROM " + TABLE_NAME;
     jdbcTemplate.update(query);
   }
 
