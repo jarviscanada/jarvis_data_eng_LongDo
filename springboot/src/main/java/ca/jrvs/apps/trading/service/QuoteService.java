@@ -6,11 +6,11 @@ import ca.jrvs.apps.trading.model.domain.IexQuote;
 import ca.jrvs.apps.trading.model.domain.Quote;
 import java.util.List;
 import java.util.stream.Collectors;
-import javax.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
 @Service
@@ -28,10 +28,8 @@ public class QuoteService {
   }
 
   /**
-   * Update quote table against IEX source
-   * - get all quotes from the db
-   * - foreach ticker get iexQuote
-   * - convert iexQuote to quote entity - persist quote to db
+   * Update quote table against IEX source - get all quotes from the db - foreach ticker get
+   * iexQuote - convert iexQuote to quote entity - persist quote to db
    *
    * @throws org.springframework.dao.DataAccessException if unable to retrieve data
    * @throws IllegalArgumentException                    for invalid input
@@ -48,9 +46,8 @@ public class QuoteService {
   }
 
   /**
-   * Helper method. Map an IexQuote to a Quote entity
-   * Note: `iexQuote.getLatestPrice() == null
-   * if the stock market is close. Make sure set a default value for number fields(s).
+   * Helper method. Map an IexQuote to a Quote entity Note: `iexQuote.getLatestPrice() == null if
+   * the stock market is close. Make sure set a default value for number fields(s).
    */
   protected static Quote buildQuoteFromIexQuote(IexQuote iexQuote) {
     Quote quote = new Quote();
@@ -63,14 +60,12 @@ public class QuoteService {
   }
 
   /**
-   * Validate (against IEX) and save given tickers to quote table
-   * - Get iexQuote(s)
-   * - convert each iexQuote to Quote entity
-   * - persist the quote to db
+   * Validate (against IEX) and save given tickers to quote table - Get iexQuote(s) - convert each
+   * iexQuote to Quote entity - persist the quote to db
    *
    * @param tickers a list of tickers/symbols
    * @throws IllegalArgumentException if ticker is not found from IEX
-   * */
+   */
 
   public List<Quote> saveQuotes(List<String> tickers) {
     List<IexQuote> iexQuotes = tickers.stream().map(ticker -> findIexQuoteByTicker(ticker))
@@ -83,10 +78,10 @@ public class QuoteService {
 
   }
 
-  public Quote saveQuote(String ticker){
-      IexQuote iexQuote = findIexQuoteByTicker(ticker);
-      Quote quote = buildQuoteFromIexQuote(iexQuote);
-      return quoteDao.save(quote);
+  public Quote saveQuote(String ticker) {
+    IexQuote iexQuote = findIexQuoteByTicker(ticker);
+    Quote quote = buildQuoteFromIexQuote(iexQuote);
+    return quoteDao.save(quote);
   }
 
   /**
