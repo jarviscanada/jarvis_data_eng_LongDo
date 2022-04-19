@@ -51,10 +51,5 @@ public class AppConfig {
     return cm;
   }
 
-  public static void main(String[] args) throws Exception {
-    ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-    Application app = context.getBean(Application.class);
-    app.run(args);
-  }
 
 }
